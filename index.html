@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currencny converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter">
+    <img src="https://cdn-icons-gif.flaticon.com/8112/8112952.gif" width="100" height="100"  >
+    <h2>Currency Converter</h2>
+    <div class="row">
+      <select id="fromCurrency"></select>
+      <input type="number" id="fromAmount" placeholder="Amount" />
+    </div>
+    <div class="row">
+      <select id="toCurrency"></select>
+      <input type="text" id="toAmount" disabled />
+    </div>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
